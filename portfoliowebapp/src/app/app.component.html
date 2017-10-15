@@ -41,18 +41,43 @@
 
     </div>
 
-    <div class="row justify-content-start" id="introAmbitions">
-        <div class="col-4" class="bg-danger">
+    <!--Link to my personal ambitions and future perspectives-->
+    <div class="row" id="introAmbitions">
+      <div class="col-6">
+        <div class="bg-dark">
           {{ambitions}}
         </div>
+      </div>
+
+      <div class="col-6">
+        <div class="bg-danger">
+          {{interests}}
+        </div>
+      </div>
     </div>
 
-    <div id="introProjects">
-      {{projects}}
+    <!--Link to my projects-->
+    <div class="row" id="introProjects">
+      <div class="col-6">
+          <div class="bg-warning">
+            {{projects}}
+          </div>
+      </div>
+
+      <div class="col-6">
+        <div class="bg-primary">
+          {{capabilities}}
+        </div>
+      </div>
     </div>
 
-    <div id="introContact">
-      {{contact}}
+    <!--Link to my personal information and who I am-->
+    <div class="row" id="introContact">
+      <div class="col-6">
+        <div class="bg-success">
+          {{contact}}
+        </div>
+      </div>
     </div>
   </body>
 </html>

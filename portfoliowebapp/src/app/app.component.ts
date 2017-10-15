@@ -10,4 +10,6 @@ export class AppComponent {
   ambitions = 'Ambitions';
   projects = 'Projects';
   contact = 'Contact';
+  interests = 'Personal interests';
+  capabilities = 'Capabilities';
 }
