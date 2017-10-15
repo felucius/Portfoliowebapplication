@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83caf024-8d43-4c7a-9e0c-37d07b6eaedd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/ambitions.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/capabilities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/contact.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/personalinterest.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/projects.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfoliowebapp/src/app/app.component.html" afterPath="$PROJECT_DIR$/portfoliowebapp/src/app/app.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfoliowebapp/src/app/app.component.ts" afterPath="$PROJECT_DIR$/portfoliowebapp/src/app/app.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,8 +45,8 @@
       <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+            <state relative-caret-position="425">
+              <caret line="103" column="24" lean-forward="false" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -92,7 +97,8 @@
     <handled-path value="$PROJECT_DIR$/portfoliowebapp/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="833" />
+    <option name="x" value="369" />
+    <option name="y" value="26" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
   </component>
@@ -166,10 +172,10 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\assets\images" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\assets\images" />
     </key>
   </component>
@@ -205,12 +211,12 @@
       <updated>1507935126603</updated>
       <workItem from="1507935131942" duration="27000" />
       <workItem from="1507974178222" duration="7039000" />
-      <workItem from="1508064277928" duration="3363000" />
+      <workItem from="1508064277928" duration="5418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10429000" />
+    <option name="totallyTimeSpent" value="12484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -368,8 +374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+        <state relative-caret-position="425">
+          <caret line="103" column="24" lean-forward="false" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
           <folding />
         </state>
       </provider>
