@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  projects = 'Projects';
-  contact = 'Contact';
-  interests = 'Interests';
-  capabilities = 'Skills';
+  projects = 'PROJECTS I HAVE WORKED ON';
+  contact = 'CONTACT MAXIME DE LANGE';
+  interests = 'WHAT ARE MY PERSONAL INTERESTS';
+  capabilities = 'WHAT IS MY LIST OF SKILLS';
+  introduction ='Junior programmer with a passion for programming and designing.';
 }
