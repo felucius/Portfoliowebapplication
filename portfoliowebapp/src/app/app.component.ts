@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Not afraid of change, growth and becoming successful';
   ambitions = 'Ambitions';
   projects = 'Projects';
   contact = 'Contact';
-  interests = 'Personal interests';
+  interests = 'Interests';
   capabilities = 'Capabilities';
 }
