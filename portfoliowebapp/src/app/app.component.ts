@@ -6,9 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  ambitions = 'Ambitions';
   projects = 'Projects';
   contact = 'Contact';
   interests = 'Interests';
-  capabilities = 'Capabilities';
+  capabilities = 'Skills';
 }
