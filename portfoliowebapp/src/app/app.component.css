@@ -1,0 +1,14 @@
+h1 {
+  font-size: 3.7vw;
+}
+h2 {
+  font-size: 3.0vh;
+}
+p {
+  font-size: 2vmin;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

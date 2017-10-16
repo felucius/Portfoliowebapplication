@@ -2,6 +2,7 @@
 <html>
   <title>Maxime de Lange</title>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   </head>
 
@@ -17,7 +18,7 @@
         <img src="assets/images/maxime2.jpg" class="rounded-circle" height="300px" width="300px">
       </div>
       <div class="row justify-content-center" id="introduction">
-        <h1 class="text-danger">{{title}}</h1>
+        <h1 class="col-md-4 padtop" class="text-danger">{{title}}</h1>
       </div>
     </div>
 
@@ -36,34 +37,29 @@
       <br>
     </div>
 
-    <!--Information and hyperlinks to my personal information-->
-    <div id="introText">
-
-    </div>
-
     <!--Link to my personal ambitions and future perspectives-->
     <div class="row" id="introAmbitions">
       <div class="col-6">
         <div class="bg-dark">
           <div class="row justify-content-center">
-            <h2 class="">{{ambitions}}</h2>
+            <h2>{{ambitions}}</h2>
           </div>
 
           <div class="row justify-content-center">
-            <img src="assets/images/ambitions.png" width="200px" height="200px">
+            <img class="col-md-4 padtop" src="assets/images/ambitions.png" width="200px" height="200px">
           </div>
           <br>
         </div>
       </div>
 
-      <div class="col-6">
+      <div class="col-6" id="introPersonalInterests">
         <div class="bg-danger">
           <div class="row justify-content-center">
             <h2>{{interests}}</h2>
           </div>
 
           <div class="row justify-content-center">
-            <img src="assets/images/personalinterest.png" width="200px" height="200px">
+            <img class="col-md-4 padtop" src="assets/images/personalinterest.png" width="200px" height="200px">
           </div>
           <br>
         </div>
@@ -79,7 +75,7 @@
             </div>
 
             <div class="row justify-content-center">
-              <img src="assets/images/projects.png" width="200px" height="200px">
+              <img class="col-md-4 padtop" src="assets/images/projects.png" width="200px" height="200px">
             </div>
             <br>
           </div>
@@ -92,11 +88,26 @@
           </div>
 
           <div class="row justify-content-center">
-            <img src="assets/images/capabilities.png" width="200px" height="200px">
+            <img class="col-md-4 padtop" src="assets/images/capabilities.png" width="200px" height="200px">
           </div>
           <br>
         </div>
       </div>
+    </div>
+
+    <!--Page line break-->
+    <div class="container-fluid" class="bg-light" id="introPageBreak5">
+      <br>
+    </div>
+
+    <!--Page line break-->
+    <div class="container-fluid" class="bg-danger" id="introPageBreak6">
+      <br>
+    </div>
+
+    <!--Page line break-->
+    <div class="container-fluid" class="bg-light" id="introPageBreak7">
+      <br>
     </div>
 
     <!--Link to my personal information and who I am-->
@@ -108,7 +119,7 @@
           </div>
 
           <div class="row justify-content-center">
-            <img src="assets/images/contact.png" width="200px" height="200px">
+            <img class="col-md-4 padtop" src="assets/images/contact.png" width="200px" height="200px">
           </div>
           <br>
         </div>
