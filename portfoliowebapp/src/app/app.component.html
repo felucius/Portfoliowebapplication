@@ -58,8 +58,10 @@
   <br>
 </div>
 
-<div class="container-fluid" class="row justify-content-center">
-  <h2>{{introduction}}</h2>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <h2>{{introduction}}</h2>
+  </div>
 </div>
 
 <!--Page line break-->
@@ -78,15 +80,15 @@
 </div>
 
 <!--Content that made this site-->
-<div ng-controller="videoplayer" class="row">
+<div ng-controller="videoplayer" class="row no-gutters">
   <div class="col-6">
-    <video id="video" autobuffer width="100%" autoplay loop>
+    <video id="video" autobuffer width="100%" height="100%" autoplay loop>
       <source src="assets/videos/cssmovie.mp4" type="video/mp4">
     </video>
   </div>
 
   <div class="col-6">
-    <video width="100%" autoplay loop>
+    <video width="100%" height="100%" autoplay loop>
       <source src="assets/videos/htmlmovie.mp4" typeof="video/mp4">
     </video>
   </div>
@@ -107,70 +109,55 @@
   <br>
 </div>
 
-<!--Link to my personal ambitions and future perspectives-->
-<div class="container">
-  <div class="col-12">
-    <div class="">
+<div class="row no-gutters">
+  <div class="col" id="image1">
+    <div class="row justify-content-center">
+      <img class="col-md-4 padtop" src="assets/images/iteration2/personalinterests.png" width="100%" height="100%">
+      <div class="overlay" id="overlay1">
+        <div class="text">
+          <p>{{interests}}</p>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <div class="col" id="image2">
       <div class="row justify-content-center">
-        <img class="col-md-2 padtop" src="assets/images/iteration2/ambition.png" width="100%" height="100%">
-        <div class="overlay">
+        <img class="col-md-4 padtop" src="assets/images/iteration2/ambition.png" width="100%" height="100%">
+        <div class="overlay" id="overlay2">
           <div class="text">
-            <h2>{{capabilities}}</h2>
+            <p>{{capabilities}}<p>
           </div>
         </div>
       </div>
       <br>
-    </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="col-12">
-    <div class="">
+<div class="row no-gutters">
+  <div class="col-6" id="image3">
       <div class="row justify-content-center">
-        <img class="col-md-2 padtop" src="assets/images/iteration2/personalinterests.png" width="100%" height="100%">
-        <div class="overlay">
+        <img class="col-md-4 padtop" src="assets/images/iteration2/projects.png" width="100%" height="100%">
+        <div class="overlay" id="overlay3">
           <div class="text">
-            <h2>{{interests}}</h2>
+            <p>{{projects}}</p>
           </div>
         </div>
       </div>
       <br>
-    </div>
   </div>
-</div>
 
-<!--Link to my projects-->
-<div class="container">
-  <div class="col-12">
-    <div class="">
+  <div class="col-6" id="image4">
       <div class="row justify-content-center">
-        <img class="col-md-2 padtop" src="assets/images/iteration2/projects.png" width="100%" height="100%">
-        <div class="overlay">
+        <img class="col-md-4 padtop" src="assets/images/iteration2/contact.png" width="100%" height="100%">
+        <div class="overlay" id="overlay4">
           <div class="text">
-            <h2>{{projects}}</h2>
+            <p>{{contact}}</p>
           </div>
         </div>
       </div>
       <br>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="col-12">
-    <div class="">
-
-      <div class="row justify-content-center">
-        <img class="col-md-2 padtop" src="assets/images/iteration2/contact.png" width="100%" height="100%">
-        <div class="overlay">
-          <div class="text">
-            <h2>{{contact}}</h2>
-          </div>
-        </div>
-      </div>
-      <br>
-    </div>
   </div>
 </div>
 
