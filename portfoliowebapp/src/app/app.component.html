@@ -79,17 +79,20 @@
   <br>
 </div>
 
-<!--Content that made this site-->
+<!--Content that made this site. Video automatically plays when website is loaded.
+    Content is available for Android and IOS and working with Chrome and Safari-->
 <div ng-controller="videoplayer" class="row no-gutters">
   <div class="col-6">
-    <video id="video" autobuffer width="100%" height="100%" autoplay loop>
-      <source src="assets/videos/cssmovie.mp4" type="video/mp4">
+    <video autoplay muted loop>
+      <source src="http://maximedelange.com/assets/videos/cssmovie.mp4" type="video/mp4">
+      <p>Your browser does not support the video element.</p>
     </video>
   </div>
 
   <div class="col-6">
-    <video width="100%" height="100%" autoplay loop>
-      <source src="assets/videos/htmlmovie.mp4" typeof="video/mp4">
+    <video autoplay muted loop>
+      <source src="http://maximedelange.com/assets/videos/htmlmovie.mp4" typeof="video/mp4">
+      <p>Your browser does not support the video element.</p>
     </video>
   </div>
 </div>
