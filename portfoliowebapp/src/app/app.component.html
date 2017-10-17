@@ -1,9 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<html>
+<html ng-app="app">
 <title>Maxime de Lange</title>
 <head>
+  <!--Import viewport for disabling zooming in phones-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!--Import stylsheet from Bootstrap framework-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <!--Import javascript file for playing videos on mobiles-->
+  <script src="indexpage.js"></script>
 </head>
 
 <body>
@@ -74,9 +78,9 @@
 </div>
 
 <!--Content that made this site-->
-<div class="row">
+<div ng-controller="videoplayer" class="row">
   <div class="col-6">
-    <video width="100%" autoplay loop>
+    <video id="video" autobuffer width="100%" autoplay loop>
       <source src="assets/videos/cssmovie.mp4" type="video/mp4">
     </video>
   </div>
@@ -108,7 +112,7 @@
   <div class="col-12">
     <div class="">
       <div class="row justify-content-center">
-        <img class="col-md-4 padtop" src="assets/images/iteration2/ambition.png" width="100%" height="100%">
+        <img class="col-md-2 padtop" src="assets/images/iteration2/ambition.png" width="100%" height="100%">
         <div class="overlay">
           <div class="text">
             <h2>{{capabilities}}</h2>
@@ -124,7 +128,7 @@
   <div class="col-12">
     <div class="">
       <div class="row justify-content-center">
-        <img class="col-md-4 padtop" src="assets/images/iteration2/personalinterests.png" width="100%" height="100%">
+        <img class="col-md-2 padtop" src="assets/images/iteration2/personalinterests.png" width="100%" height="100%">
         <div class="overlay">
           <div class="text">
             <h2>{{interests}}</h2>
@@ -141,7 +145,7 @@
   <div class="col-12">
     <div class="">
       <div class="row justify-content-center">
-        <img class="col-md-4 padtop" src="assets/images/iteration2/projects.png" width="100%" height="100%">
+        <img class="col-md-2 padtop" src="assets/images/iteration2/projects.png" width="100%" height="100%">
         <div class="overlay">
           <div class="text">
             <h2>{{projects}}</h2>
@@ -158,7 +162,7 @@
     <div class="">
 
       <div class="row justify-content-center">
-        <img class="col-md-4 padtop" src="assets/images/iteration2/contact.png" width="100%" height="100%">
+        <img class="col-md-2 padtop" src="assets/images/iteration2/contact.png" width="100%" height="100%">
         <div class="overlay">
           <div class="text">
             <h2>{{contact}}</h2>

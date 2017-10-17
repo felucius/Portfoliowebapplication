@@ -30,3 +30,10 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+body {
+  overflow-x: hidden !important;
+}
+body > * {
+  max-width: 100% !important;
+}
