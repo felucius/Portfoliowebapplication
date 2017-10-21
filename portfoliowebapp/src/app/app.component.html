@@ -1,13 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<html ng-app="app">
+<html ng-app>
 <title>Maxime de Lange</title>
 <head>
+  <!--Import angular api-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <!--Import viewport for disabling zooming in phones-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <!--Import stylsheet from Bootstrap framework-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <!--Import javascript file for playing videos on mobiles-->
-  <script src="indexpage.js"></script>
 </head>
 
 <body>
@@ -81,16 +81,16 @@
 
 <!--Content that made this site. Video automatically plays when website is loaded.
     Content is available for Android and IOS and working with Chrome and Safari-->
-<div ng-controller="videoplayer" class="row no-gutters">
+<div ng-app="app" ng-controller="videoplayer" class="row no-gutters">
   <div class="col-6">
-    <video autoplay muted loop>
+    <video id="video1" autoplay muted loop>
       <source src="http://maximedelange.com/assets/videos/cssmovie.mp4" type="video/mp4">
       <p>Your browser does not support the video element.</p>
     </video>
   </div>
 
   <div class="col-6">
-    <video autoplay muted loop>
+    <video id="video2" autoplay muted loop>
       <source src="http://maximedelange.com/assets/videos/htmlmovie.mp4" typeof="video/mp4">
       <p>Your browser does not support the video element.</p>
     </video>
@@ -118,7 +118,7 @@
       <img class="col-md-4 padtop" src="assets/images/iteration2/personalinterests.png" width="100%" height="100%">
       <div class="overlay" id="overlay1">
         <div class="text">
-          <p>{{interests}}</p>
+          <a (click)="goToAnchor('/interests', 'gotorouter')"><p>{{interests}}</p></a>
         </div>
       </div>
     </div>
@@ -130,7 +130,7 @@
         <img class="col-md-4 padtop" src="assets/images/iteration2/ambition.png" width="100%" height="100%">
         <div class="overlay" id="overlay2">
           <div class="text">
-            <p>{{capabilities}}<p>
+            <a (click)="goToAnchor('/skills', 'gotorouter')"><p>{{capabilities}}</p></a>
           </div>
         </div>
       </div>
@@ -144,7 +144,7 @@
         <img class="col-md-4 padtop" src="assets/images/iteration2/projects.png" width="100%" height="100%">
         <div class="overlay" id="overlay3">
           <div class="text">
-            <p>{{projects}}</p>
+            <a (click)="goToAnchor('/projects', 'gotorouter')"><p>{{projects}}</p></a>
           </div>
         </div>
       </div>
@@ -156,7 +156,7 @@
         <img class="col-md-4 padtop" src="assets/images/iteration2/contact.png" width="100%" height="100%">
         <div class="overlay" id="overlay4">
           <div class="text">
-            <p>{{contact}}</p>
+            <a (click)="goToAnchor('/contact', 'gotorouter')"><p>{{contact}}</p></a>
           </div>
         </div>
       </div>
@@ -174,6 +174,7 @@
   <br>
 </div>
 
+<router-outlet></router-outlet>
 <!--Page line break-->
 <div class="container-fluid" id="introPageBreak16">
   <br>

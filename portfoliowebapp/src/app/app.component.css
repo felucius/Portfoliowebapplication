@@ -41,6 +41,11 @@
   -ms-transform: translate(-50%, -50%);
 }
 
+.text a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 body {
   overflow-x: hidden !important;
 }
@@ -57,4 +62,5 @@ h2 {
 p {
   font-size: 2vw;
 }
+
 
