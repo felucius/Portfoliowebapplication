@@ -13,11 +13,50 @@ export class AppComponent {
   capabilities = 'MY LIST OF SKILLS';
   introduction ='Junior programmer with a passion for programming and designing.';
 
+  // Fields
   router: Router;
   section;
+  visible: boolean = true;
+  hide: boolean = false;
+
   constructor(router: Router){
     this.router = router;
   }
+
+  // Opens div on toggle.
+  toggleDiv(elementID){
+    var div = document.getElementById(elementID);
+
+    if(this.visible){
+      div.style.display = 'block';
+      //this.visible =  false;
+      //this.hide = true;
+
+      // Animation movement
+      this.myMove();
+    }else{
+      div.style.display = 'none';
+      this.visible = true;
+      this.hide = false;
+    }
+  }
+
+  myMove() {
+    var elem = document.getElementById("animation");
+    var pos = 0;
+    var id = setInterval(frame, 5);
+    function frame() {
+      if (pos == 350) {
+        clearInterval(id);
+      } else {
+        pos++;
+        //elem.style.top = pos + 'px';
+        elem.style.left = pos + 'px';
+      }
+    }
+  }
+
+
 
   // Find the location and the fragment location of the page.
   goToAnchor(page, anchor):void{

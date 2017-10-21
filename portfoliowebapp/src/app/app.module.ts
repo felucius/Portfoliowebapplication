@@ -13,7 +13,6 @@ import {SkillComponent} from './skill/skill.component';
 import {ProjectComponent} from './project/project.component';
 import {ContactComponent} from "./contact/contact.component";
 
-
 const appRoutes: Routes = [
   {
     path: 'home',

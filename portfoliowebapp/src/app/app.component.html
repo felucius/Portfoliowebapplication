@@ -144,7 +144,7 @@
         <img class="col-md-4 padtop" src="assets/images/iteration2/projects.png" width="100%" height="100%">
         <div class="overlay" id="overlay3">
           <div class="text">
-            <a (click)="goToAnchor('/projects', 'gotorouter')"><p>{{projects}}</p></a>
+            <a (click)="goToAnchor('/projects', 'gotorouter')" (click)="toggleDiv('projectShow')"><p>{{projects}}</p></a>
           </div>
         </div>
       </div>
@@ -156,7 +156,7 @@
         <img class="col-md-4 padtop" src="assets/images/iteration2/contact.png" width="100%" height="100%">
         <div class="overlay" id="overlay4">
           <div class="text">
-            <a (click)="goToAnchor('/contact', 'gotorouter')"><p>{{contact}}</p></a>
+            <a (click)="goToAnchor('/contact', 'gotorouter')" (click)="toggleDiv('contactShow')"><p>{{contact}}</p></a>
           </div>
         </div>
       </div>
@@ -174,10 +174,18 @@
   <br>
 </div>
 
-<router-outlet></router-outlet>
+<!--Shows new page and router outlet below-->
+<!--<router-outlet></router-outlet>-->
 <!--Page line break-->
 <div class="container-fluid" id="introPageBreak16">
   <br>
+</div>
+
+<div id="projectShow">
+  <router-outlet></router-outlet>
+</div>
+<div id="contactShow">
+  <router-outlet></router-outlet>
 </div>
 </body>
 </html>
