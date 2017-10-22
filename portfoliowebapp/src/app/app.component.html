@@ -118,7 +118,7 @@
       <img class="col-md-4 padtop" src="assets/images/iteration2/personalinterests.png" width="100%" height="100%">
       <div class="overlay" id="overlay1">
         <div class="text">
-          <a (click)="goToAnchor('/interests', 'gotorouter')"><p>{{interests}}</p></a>
+          <a (click)="goToAnchor('/interests', 'gotorouter')" routerLink="interests"><p>{{interests}}</p></a>
         </div>
       </div>
     </div>
@@ -130,7 +130,7 @@
         <img class="col-md-4 padtop" src="assets/images/iteration2/ambition.png" width="100%" height="100%">
         <div class="overlay" id="overlay2">
           <div class="text">
-            <a (click)="goToAnchor('/skills', 'gotorouter')"><p>{{capabilities}}</p></a>
+            <a (click)="goToAnchor('/skills', 'gotorouter')" routerLink="skills"><p>{{capabilities}}</p></a>
           </div>
         </div>
       </div>
@@ -144,7 +144,7 @@
         <img class="col-md-4 padtop" src="assets/images/iteration2/projects.png" width="100%" height="100%">
         <div class="overlay" id="overlay3">
           <div class="text">
-            <a (click)="goToAnchor('/projects', 'gotorouter')" (click)="toggleDiv('projectShow')"><p>{{projects}}</p></a>
+            <a (click)="goToAnchor('/projects', 'gotorouter')" (click)="toggleDiv('projectShow')" routerLink="projects"><p>{{projects}}</p></a>
           </div>
         </div>
       </div>
@@ -156,7 +156,7 @@
         <img class="col-md-4 padtop" src="assets/images/iteration2/contact.png" width="100%" height="100%">
         <div class="overlay" id="overlay4">
           <div class="text">
-            <a (click)="goToAnchor('/contact', 'gotorouter')" (click)="toggleDiv('contactShow')"><p>{{contact}}</p></a>
+            <a (click)="goToAnchor('/contact', 'gotorouter')" (click)="toggleDiv('contactShow')" routerLink="contact"><p>{{contact}}</p></a>
           </div>
         </div>
       </div>

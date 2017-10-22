@@ -13,6 +13,9 @@ import {SkillComponent} from './skill/skill.component';
 import {ProjectComponent} from './project/project.component';
 import {ContactComponent} from "./contact/contact.component";
 
+// Import animations
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+
 const appRoutes: Routes = [
   {
     path: 'home',
@@ -51,6 +54,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(
       appRoutes,
       {

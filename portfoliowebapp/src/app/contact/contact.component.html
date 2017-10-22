@@ -16,12 +16,9 @@
 
 <!--Outlet of navigation links-->
 <div class="row justify-content-center" id="gotorouter">
-  <div id="contactInformation">
-    <ul>
-      <ul>maxime.de.lange@outlook.com</ul>
-      <ul>facebook/maxime</ul>
-      <ul>github/maxime</ul>
-      <ul>linkedin/maxime</ul>
+  <div [@contactAnimation]="stateName" (click)="toggle()" id="contactInformation">
+    <ul *ngFor="let contactme of contacts">
+      {{contactme}}
       <img src="assets/images/iteration2/contact2.png">
     </ul>
   </div>
