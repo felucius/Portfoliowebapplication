@@ -4,5 +4,13 @@ ul {
   margin: 100px auto;
   text-align:center;
   padding: 20px;
-  font-size: 2vw;
+}
+
+ul{
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.col-md-2{
+  width: 50%;
 }
