@@ -16,14 +16,15 @@
 
 <!--Outlet of navigation links-->
 <div class="row justify-content-center" id="gotorouter">
-  <div [@contactAnimation]="stateName" (click)="toggle()" id="contactInformation">
-    <ul *ngFor="let contactme of contacts">
-      {{contactme}}
-      <img src="assets/images/iteration2/contact2.png">
-    </ul>
-  </div>
+
 </div>
 
+<div [@contactAnimation]="stateName" (load)="toggle()" id="contactInformation">
+  <ul *ngFor="let contactme of contacts; let i of index" (click)="getHyperLinks(i)">
+    {{contactme}}
+    <img src="assets/images/iteration2/contact2.png">
+  </ul>
+</div>
 <div class="container-fluid" class="bg-danger">
   <br>
 </div>
