@@ -11,10 +11,13 @@ import { RouterModule, Routes } from '@angular/router';
 import {InterestComponent} from './interest/interest.component';
 import {SkillComponent} from './skill/skill.component';
 import {ProjectComponent} from './project/project.component';
-import {ContactComponent} from "./contact/contact.component";
+import {ContactComponent} from './contact/contact.component';
 
 // Import animations
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+// Import smart routing
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 const appRoutes: Routes = [
   {
@@ -39,7 +42,7 @@ const appRoutes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/',
+    redirectTo: '',
     pathMatch: 'full'
   }
 ];
@@ -56,13 +59,14 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(
-      appRoutes,
-      {
-        enableTracing: false
+      appRoutes, {
+        useHash: false
       }
     )
   ],
-  providers: [],
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
