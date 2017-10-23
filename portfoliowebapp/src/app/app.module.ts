@@ -10,8 +10,8 @@ import { RouterModule, Routes } from '@angular/router';
 // Router navigation imports.
 import {InterestComponent} from './interest/interest.component';
 import {SkillComponent} from './skill/skill.component';
-import {ProjectComponent} from './project/project.component';
 import {ContactComponent} from './contact/contact.component';
+import {ProjectComponent} from "./project/project.component";
 
 // Import animations
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -65,7 +65,7 @@ const appRoutes: Routes = [
     )
   ],
   providers: [
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
   ],
   bootstrap: [AppComponent]
 })
