@@ -20,11 +20,13 @@
 
 <div [@projectAnimation]="stateName" (load)="toggle()" id="projectInformation">
   <ul *ngFor="let project of projects">
-    {{project}}
-    <img class="col-md-2 padtop" src="assets/images/iteration2/projects2.png">
+    {{project.name}}
+    <div class="rounded-circle">
+      <img class="col-md-2" class="rounded-circle" src="{{project.image}}">
+    </div>
+    <a href="{{project.hyperLink}}">App</a>
   </ul>
 </div>
-
 
 <div class="container-fluid" class="bg-danger" id="pageBreak2">
   <br>

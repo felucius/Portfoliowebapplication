@@ -8,6 +8,7 @@ import {Project} from './project-object.component';
 @Component({
   selector: 'app-root',
   templateUrl: './project.component.html',
+  styleUrls: ['./project.component.css'],
 
   animations: [
     trigger('projectAnimation', [
@@ -30,10 +31,10 @@ export class ProjectComponent {
   router: Router;
 
   projects: Project[] = [
-    {id: 1, name: 'Android - Calories checker', image: 'assets/images/iteration2/contact.png', hyperLink: 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl'},
-    {id: 2, name: 'Android - Piksel tap', image: 'assets/images/iteration2.contact.png', hyperLink: null},
-    {id: 3, name: 'Android - Tasklist manager', image: 'assets/images/iteraion2.contact.png', hyperLink: null},
-    {id: 4, name: 'Android - Bitcoin currency', image: 'assets/images/iteration2/contact.png', hyperLink: null}
+    {id: 1, name: 'Android - Calories checker', image: 'assets/images/iteration2/calorieschecker.png', hyperLink: 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl'},
+    {id: 2, name: 'Android - Piksel tap', image: 'assets/images/iteration2/pikseltap.png', hyperLink: null},
+    {id: 3, name: 'Android - Tasklist manager', image: 'assets/images/iteration2/tasklistmanager.png', hyperLink: null},
+    {id: 4, name: 'Android - Bitcoin currency', image: 'assets/images/iteration2/bitcoincurrency.png', hyperLink: null}
   ];
 
   constructor(router: Router){
