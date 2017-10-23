@@ -16,21 +16,19 @@
 
 <!--Outlet of navigation links-->
 <div class="row justify-content-center" id="gotorouter">
-  <div id="skillInformation">
-    <ul>
-      <ul>Java + (web frameworks)</ul>
-      <ul>C#</ul>
-      <ul>HTML</ul>
-      <ul>CSS + (frameworks)</ul>
-      <ul>Javascript + (frameworks)</ul>
-      <ul>SQL</ul>
-      <ul>Databases</ul>
-      <ul>Android mobile development</ul>
-      <ul>IOS mobile development</ul>
-      <img src="assets/images/iteration2/ambitions2.png">
-    </ul>
-  </div>
 </div>
+
+<div [@skillAnimation]="stateName" (load)="toggle()" id="skillInformation">
+  <ul *ngFor="let skill of skills">
+    <!--
+    <div class="rounded-circle">
+      <img class="col-md-2 padtop" class="rounded-circle" src="{{skill.image}}">
+    </div>-->
+    {{skill.name}}
+    {{skill.framework}}
+  </ul>
+</div>
+
 
 <div class="container-fluid" class="bg-danger">
   <br>
