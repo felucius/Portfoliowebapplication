@@ -1,0 +1,16 @@
+ul {
+  width: 100%;
+  background: #faffaf;
+  margin: 100px auto;
+  text-align:center;
+  padding: 20px;
+}
+
+ul{
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.col-md-2{
+  width: 50%;
+}

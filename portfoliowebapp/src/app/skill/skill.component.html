@@ -20,10 +20,11 @@
 
 <div [@skillAnimation]="stateName" (load)="toggle()" id="skillInformation">
   <ul *ngFor="let skill of skills">
-    <!--
+
     <div class="rounded-circle">
       <img class="col-md-2 padtop" class="rounded-circle" src="{{skill.image}}">
-    </div>-->
+    </div>
+
     {{skill.name}}
     {{skill.framework}}
   </ul>
