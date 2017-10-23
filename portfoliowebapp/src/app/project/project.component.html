@@ -20,11 +20,10 @@
 
 <div [@projectAnimation]="stateName" (load)="toggle()" id="projectInformation">
   <ul *ngFor="let project of projects">
-    {{project.name}}
     <div class="rounded-circle">
       <img class="col-md-2" class="rounded-circle" src="{{project.image}}">
     </div>
-    <a href="{{project.hyperLink}}">App</a>
+    <a href="{{project.hyperLink}}">{{project.name}}</a>
   </ul>
 </div>
 
