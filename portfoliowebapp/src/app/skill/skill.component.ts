@@ -13,7 +13,7 @@ import {trigger, transition, query, style, stagger, animate} from '@angular/anim
         query('ul', style({
           transform: 'translateX(-100%)'
         })),
-        query('ul', stagger('600ms', [
+        query('ul', stagger('400ms', [
           animate('900ms', style({transform: 'translateX(0)'}))
         ]))
       ])

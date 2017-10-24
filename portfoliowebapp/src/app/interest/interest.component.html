@@ -21,7 +21,7 @@
   <div [@skillAnimation]="stateName" (load)="toggle()" id="contactInformation">
     <ul *ngFor="let interest of interests">
       <div class="rounded-circle">
-        <img src="{{interest.image}}">
+        <img class="col-md-2 padtop" class="rounded-circle" src="{{interest.image}}">
       </div>
       {{interest.name}}
     </ul>
