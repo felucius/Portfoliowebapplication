@@ -19,11 +19,11 @@
 </div>
 
 <div [@contactAnimation]="stateName" (load)="toggle()" id="contactInformation">
-  <ul *ngFor="let contactme of contacts; let i of index" (click)="getHyperLinks(i)">
+  <ul *ngFor="let contactme of contacts; let i of index" (click)="getHyperLinks(i.id)">
     <div class="rounded-circle">
       <img class="col-md-2 padtop" class="rounded-circle" src="{{contactme.image}}">
     </div>
-    <a href="{{contactme.hyperLink}}">{{contactme.name}}</a>
+    {{contactme.name}}
   </ul>
 </div>
 

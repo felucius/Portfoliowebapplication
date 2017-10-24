@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core'
 import { trigger, state, style, transition, animate, keyframes, query, stagger } from '@angular/animations'
 import {Contact} from "./contact-object.contact";
+import {Router} from "@angular/router";
 
 @Component({
   templateUrl: './contact.component.html',
@@ -30,8 +31,10 @@ export class ContactComponent {
     {id: 4, name: 'GITHUB', image: 'assets/images/iteration2/gitlogo.jpg', hyperLink: 'https://github.com/felucius'}
   ];
   show = false;
+  router: Router;
 
-  constructor(){
+  constructor(router: Router){
+    this.router = router;
   }
 
   get stateName(){
@@ -44,8 +47,17 @@ export class ContactComponent {
 
   getHyperLinks(hyperLinkName){
     switch (hyperLinkName){
-      case 'E-MAIL':
+      case 1:
         this.contacts[0].name = 'MAXIME.DE.LANGE@OUTLOOK.COM';
+        break;
+      case 2:
+        location.href = 'https://www.facebook.com/maxime.delange';
+        break;
+      case 3 :
+        location.href = 'https://www.linkedin.com/in/maxime-de-lange-867a4165/';
+        break;
+      case 4:
+        location.href = 'https://github.com/felucius';
         break;
     }
   }

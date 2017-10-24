@@ -48,4 +48,23 @@ export class ProjectComponent {
   toggle(){
     this.show = !this.show;
   }
+
+  getHyperLinks(hyperLinkName){
+    switch (hyperLinkName){
+      case 1:
+        location.href = 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl';
+        break;
+        /*
+      case 2:
+        location.href = '';
+        break;
+      case 3:
+        location.href = '';
+        break;
+      case 4:
+        location.href = '';
+        break;
+        */
+    }
+  }
 }
