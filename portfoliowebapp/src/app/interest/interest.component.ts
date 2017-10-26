@@ -23,16 +23,20 @@ import {Interest} from "./interest-object.component";
 export class InterestComponent {
   title = 'Interests';
   show = false;
-  interests: Interest[] = [
-    {id: 1, name: 'WEB DEVELOPMENT', image: 'assets/images/iteration2/logo/computerscreenlogo.png'},
-    {id: 2, name: 'MOBILE DEVELOPMENT', image: 'assets/images/iteration2/logo/mobilescreenlogo.png'},
-    {id: 3, name: 'BLOCKCHAIN', image: 'assets/images/iteration2/logo/blockchainlogo.png'},
-    {id: 4, name: 'CRYPTOCURRENCY', image: 'assets/images/iteration2/logo/bitcoinlogo.png'},
-    {id: 5, name: 'INTERACTIVE DESIGNING', image: 'assets/images/iteration2/logo/interactivedesignlogo.png'}
-  ]
+  interests: Interest[];
 
   constructor(){
+    this.createInterests();
+  }
 
+  public createInterests(){
+    this.interests = [
+      {id: 1, name: 'WEB DEVELOPMENT', image: 'assets/images/iteration2/logo/computerscreenlogo.png'},
+      {id: 2, name: 'MOBILE DEVELOPMENT', image: 'assets/images/iteration2/logo/mobilescreenlogo.png'},
+      {id: 3, name: 'BLOCKCHAIN', image: 'assets/images/iteration2/logo/blockchainlogo.png'},
+      {id: 4, name: 'CRYPTOCURRENCY', image: 'assets/images/iteration2/logo/bitcoinlogo.png'},
+      {id: 5, name: 'INTERACTIVE DESIGNING', image: 'assets/images/iteration2/logo/interactivedesignlogo.png'}
+    ]
   }
 
   get stateName(){

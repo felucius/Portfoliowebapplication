@@ -24,17 +24,22 @@ import {Router} from "@angular/router";
 export class ContactComponent {
   // Fields
   title = 'Contact';
-  contacts: Contact[] = [
-    {id: 1, name: 'E-MAIL', image: 'assets/images/iteration2/emaillogo.png', hyperLink: null},
-    {id: 2, name: 'FACEBOOK', image: 'assets/images/iteration2/facebooklogo.png', hyperLink: 'https://www.facebook.com/maxime.delange'},
-    {id: 3, name: 'LINKEDIN', image: 'assets/images/iteration2/linkedinlogo.png', hyperLink: 'https://www.linkedin.com/in/maxime-de-lange-867a4165/'},
-    {id: 4, name: 'GITHUB', image: 'assets/images/iteration2/gitlogo.jpg', hyperLink: 'https://github.com/felucius'}
-  ];
   show = false;
   router: Router;
+  contacts: Contact[];
 
   constructor(router: Router){
     this.router = router;
+    this.createContacts();
+  }
+
+  public createContacts(){
+    this.contacts = [
+      {id: 1, name: 'E-MAIL', image: 'assets/images/iteration2/emaillogo.png', hyperLink: null},
+      {id: 2, name: 'FACEBOOK', image: 'assets/images/iteration2/facebooklogo.png', hyperLink: 'https://www.facebook.com/maxime.delange'},
+      {id: 3, name: 'LINKEDIN', image: 'assets/images/iteration2/linkedinlogo.png', hyperLink: 'https://www.linkedin.com/in/maxime-de-lange-867a4165/'},
+      {id: 4, name: 'GITHUB', image: 'assets/images/iteration2/gitlogo.jpg', hyperLink: 'https://github.com/felucius'}
+    ];
   }
 
   get stateName(){
@@ -45,8 +50,8 @@ export class ContactComponent {
     this.show = !this.show;
   }
 
-  getHyperLinks(hyperLinkName){
-    switch (hyperLinkName){
+  setHyperLinks(hyperLinkID){
+    switch (hyperLinkID){
       case 1:
         this.contacts[0].name = 'MAXIME.DE.LANGE@OUTLOOK.COM';
         break;
