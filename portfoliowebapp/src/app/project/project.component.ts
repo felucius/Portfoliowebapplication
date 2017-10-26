@@ -29,16 +29,20 @@ export class ProjectComponent {
   title = 'Project';
   show = false;
   router: Router;
-
-  projects: Project[] = [
-    {id: 1, name: 'Android - Calories checker', image: 'assets/images/iteration2/calorieschecker.png', hyperLink: 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl'},
-    {id: 2, name: 'Android - Piksel tap', image: 'assets/images/iteration2/pikseltap.png', hyperLink: null},
-    {id: 3, name: 'Android - Tasklist manager', image: 'assets/images/iteration2/tasklistmanager.png', hyperLink: null},
-    {id: 4, name: 'Android - Bitcoin currency', image: 'assets/images/iteration2/bitcoincurrency.png', hyperLink: null}
-  ];
+  projects: Project[];
 
   constructor(router: Router){
     this.router = router;
+    this.createProjects();
+  }
+
+  public createProjects(){
+    this.projects = [
+      {id: 1, name: 'Android - Calories checker', image: 'assets/images/iteration2/calorieschecker.png', hyperLink: 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl'},
+      {id: 2, name: 'Android - Piksel tap', image: 'assets/images/iteration2/pikseltap.png', hyperLink: null},
+      {id: 3, name: 'Android - Tasklist manager', image: 'assets/images/iteration2/tasklistmanager.png', hyperLink: null},
+      {id: 4, name: 'Android - Bitcoin currency', image: 'assets/images/iteration2/bitcoincurrency.png', hyperLink: null}
+    ];
   }
 
   get stateName(){
@@ -49,8 +53,8 @@ export class ProjectComponent {
     this.show = !this.show;
   }
 
-  getHyperLinks(hyperLinkName){
-    switch (hyperLinkName){
+  setHyperLinks(hyperLinkID){
+    switch (hyperLinkID){
       case 1:
         location.href = 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl';
         break;
