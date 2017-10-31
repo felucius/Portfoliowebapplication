@@ -12,7 +12,7 @@
 </div>
 
 <!--Page line break-->
-<div class="container-fluid" class="bg-danger" id="introPageBreak2">
+<div class="container-fluid"  id="pageBreak">
   <br>
 </div>
 
@@ -31,26 +31,21 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" routerLink=""><h2>{{home}}</h2></a></li>
-            <li class="nav-item active">
-              <a class="nav-link" routerLink="interests"><h2>{{interests}}</h2></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" routerLink="skills"><h2>{{capabilities}}</h2></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" (click)="toggleDiv('projectShow')" routerLink="projects"><h2>{{projects}}</h2></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" (click)="toggleDiv('contactShow')" routerLink="contact"><h2>{{contact}}</h2></a>
-            </li>
+            <a class="link-3" routerLink=""><h2>{{home}}</h2></a>
+            <a class="link-3" routerLink="interests"><h2>{{interests}}</h2></a>
+            <a class="link-3" routerLink="skills"><h2>{{capabilities}}</h2></a>
+            <a class="link-3" (click)="toggleDiv('projectShow')" routerLink="projects"><h2>{{projects}}</h2></a>
+            <a class="link-3" (click)="toggleDiv('contactShow')" routerLink="contact"><h2>{{contact}}</h2></a>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </nav>
+
+<div>
+  <br>
+</div>
 
 <!--Small header for removing whitespace-->
 <div class="container-fluid" class="bg-dark" id="introPageBreak4">

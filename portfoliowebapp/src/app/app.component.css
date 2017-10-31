@@ -68,3 +68,20 @@ p {
 li{
   margin-left: 5%;
 }
+
+#pageBreak{
+  background-color: saddlebrown;
+}
+
+.link-3 {
+  transition: 0.4s;
+  color: #EEA200;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link-3:hover {
+  color: saddlebrown;
+  padding: 0px 10px;
+}
