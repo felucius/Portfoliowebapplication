@@ -31,7 +31,7 @@ export class SkillComponent {
     this.createSkills();
   }
 
-  createSkills(){
+  public createSkills(){
     this.skills = [
       {id: 1, name: 'JAVA', image: 'assets/images/iteration2/logo/javalogo.png', framework: null},
       {id: 2, name: 'C#', image: 'assets/images/iteration2/logo/csharplogo.jpg', framework: null},

@@ -11,6 +11,7 @@
   background-color: #333333;
 }
 
+/*
 .container:hover .overlay{
   opacity: 1;
 }
@@ -30,6 +31,7 @@
 #image4:hover #overlay4{
   opacity: 1;
 }
+*/
 
 .text {
   color: white;
@@ -61,4 +63,8 @@ h2 {
 }
 p {
   font-size: 2vw;
+}
+
+li{
+  margin-left: 5%;
 }

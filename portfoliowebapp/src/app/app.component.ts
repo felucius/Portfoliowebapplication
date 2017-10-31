@@ -7,10 +7,11 @@ import {NavigationEnd, Router} from "@angular/router";
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  projects = 'MY PROJECTS';
-  contact = 'CONTACT ME';
-  interests = 'MY PERSONAL INTERESTS';
-  capabilities = 'MY LIST OF SKILLS';
+  projects = 'PROJECTS';
+  contact = 'CONTACT';
+  interests = 'INTERESTS';
+  capabilities = 'SKILLS';
+  home = 'HOME';
   introduction ='Junior programmer with a passion for programming and designing.';
 
   // Fields
@@ -56,8 +57,6 @@ export class AppComponent {
     }
   }
 
-
-
   // Find the location and the fragment location of the page.
   goToAnchor(page, anchor):void{
     this.section = anchor;
@@ -88,6 +87,18 @@ export class AppComponent {
       this.doScroll();
       this.section= null;
     });
+  }
+
+  navbarToggle = true;
+  toggleNavigationBar(element){
+    var div = document.getElementById(element);
+    if(this.navbarToggle){
+      div.style.display = 'none';
+      this.navbarToggle = false;
+    }else{
+      this.navbarToggle = true;
+      div.style.display = 'block';
+    }
   }
 }
 

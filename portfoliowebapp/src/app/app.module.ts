@@ -12,6 +12,7 @@ import {InterestComponent} from './interest/interest.component';
 import {SkillComponent} from './skill/skill.component';
 import {ContactComponent} from './contact/contact.component';
 import {ProjectComponent} from "./project/project.component";
+import {HomeComponent} from "./home/home.component";
 
 // Import animations
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -21,8 +22,8 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 const appRoutes: Routes = [
   {
-    path: 'home',
-    component: AppComponent
+    path: '',
+    component: HomeComponent
   },
   {
     path: 'interests',
@@ -53,7 +54,8 @@ const appRoutes: Routes = [
     InterestComponent,
     SkillComponent,
     ProjectComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

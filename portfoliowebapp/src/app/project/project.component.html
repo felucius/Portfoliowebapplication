@@ -15,8 +15,9 @@
 </div>
 
 <!--Outlet of navigation links-->
+<!--
 <div class="row justify-content-center" id="gotorouter">
-</div>
+</div>-->
 
 <div [@projectAnimation]="stateName" (load)="toggle()" id="projectInformation">
   <ul *ngFor="let project of projects; let i of index" (click)="getHyperLinks(i.id)">

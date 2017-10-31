@@ -1,13 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<html ng-app>
+<html>
 <title>Maxime de Lange</title>
 <head>
-  <!--Import angular api-->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  <!--Import viewport for disabling zooming in phones-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <!--Import stylsheet from Bootstrap framework-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -26,167 +21,44 @@
   <br>
 </div>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-inverse">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div id="navigationMargin" class="col-md-8">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="app.component.ts"><h2>{{home}}</h2></a></li>
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="interests"><h2>{{interests}}</h2></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="skills"><h2>{{capabilities}}</h2></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" (click)="toggleDiv('projectShow')" routerLink="projects"><h2>{{projects}}</h2></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" (click)="toggleDiv('contactShow')" routerLink="contact"><h2>{{contact}}</h2></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
 <!--Small header for removing whitespace-->
 <div class="container-fluid" class="bg-dark" id="introPageBreak4">
   <br>
   <br>
 </div>
 
-<!--Introduction with image and slogan.-->
-<div class="container-fluid" class="bg-dark" id="introIntroduction">
-  <div class="row justify-content-center">
-    <img src="assets/images/iteration2/introductionimagev3.PNG" width="100%" height="10%">
-  </div>
-  <div class="bg-dark">
-    <br>
-    <br>
-  </div>
-</div>
-
-<!--Page line break-->
-<div class="container-fluid" id="introPageBreak5">
-  <br>
-</div>
-
-<!--Page line break-->
-<div class="container-fluid" class="bg-danger" id="introPageBreak6">
-  <br>
-</div>
-
-<!--Page line break-->
-<div class="container-fluid" id="introPageBreak7">
-  <br>
-</div>
-
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <h2>{{introduction}}</h2>
-  </div>
-</div>
-
-<!--Page line break-->
-<div class="container-fluid" id="introPageBreak8">
-  <br>
-</div>
-
-<!--Page line break-->
-<div class="container-fluid" class="bg-danger" id="introPageBreak9">
-  <br>
-</div>
-
-<!--Page line break-->
-<div class="container-fluid" id="introPageBreak10">
-  <br>
-</div>
-
-<!--Content that made this site. Video automatically plays when website is loaded.
-    Content is available for Android and IOS and working with Chrome and Safari-->
-<div ng-app="app" ng-controller="videoplayer" class="row no-gutters">
-  <div class="col-6">
-    <video id="video1" autoplay muted loop>
-      <source src="http://maximedelange.com/assets/videos/cssmovie.mp4" type="video/mp4">
-      <p>Your browser does not support the video element.</p>
-    </video>
-  </div>
-
-  <div class="col-6">
-    <video id="video2" autoplay muted loop>
-      <source src="http://maximedelange.com/assets/videos/htmlmovie.mp4" typeof="video/mp4">
-      <p>Your browser does not support the video element.</p>
-    </video>
-  </div>
-</div>
-
-<!--Page line break-->
-<div class="container-fluid" id="introPageBreak11">
-  <br>
-</div>
-
-<!--Page line break-->
-<div class="container-fluid" class="bg-danger" id="introPageBreak12">
-  <br>
-</div>
-
-<!--Page line break-->
-<div class="container-fluid" id="introPageBreak13">
-  <br>
-</div>
-
-<div class="row no-gutters">
-  <div class="col" id="image1">
-    <div class="row justify-content-center">
-      <img class="col-md-4 padtop" src="assets/images/iteration2/personalinterests.png" width="100%" height="100%">
-      <div class="overlay" id="overlay1">
-        <div class="text">
-          <a (click)="goToAnchor('/interests', 'gotorouter')" routerLink="interests"><p>{{interests}}</p></a>
-        </div>
-      </div>
-    </div>
-    <br>
-  </div>
-
-  <div class="col" id="image2">
-      <div class="row justify-content-center">
-        <img class="col-md-4 padtop" src="assets/images/iteration2/ambition.png" width="100%" height="100%">
-        <div class="overlay" id="overlay2">
-          <div class="text">
-            <a (click)="goToAnchor('/skills', 'gotorouter')" routerLink="skills"><p>{{capabilities}}</p></a>
-          </div>
-        </div>
-      </div>
-      <br>
-  </div>
-</div>
-
-<div class="row no-gutters">
-  <div class="col-6" id="image3">
-      <div class="row justify-content-center">
-        <img class="col-md-4 padtop" src="assets/images/iteration2/projects.png" width="100%" height="100%">
-        <div class="overlay" id="overlay3">
-          <div class="text">
-            <a (click)="goToAnchor('/projects', 'gotorouter')" (click)="toggleDiv('projectShow')" routerLink="projects"><p>{{projects}}</p></a>
-          </div>
-        </div>
-      </div>
-      <br>
-  </div>
-
-  <div class="col-6" id="image4">
-      <div class="row justify-content-center">
-        <img class="col-md-4 padtop" src="assets/images/iteration2/contact.png" width="100%" height="100%">
-        <div class="overlay" id="overlay4">
-          <div class="text">
-            <a (click)="goToAnchor('/contact', 'gotorouter')" (click)="toggleDiv('contactShow')" routerLink="contact"><p>{{contact}}</p></a>
-          </div>
-        </div>
-      </div>
-      <br>
-  </div>
-</div>
-
-<!--Page line break-->
-<div class="container-fluid" id="introPageBreak14">
-  <br>
-</div>
-
-<!--Page line break-->
-<div class="container-fluid" class="bg-danger" id="introPageBreak15">
-  <br>
-</div>
-
-<!--Shows new page and router outlet below-->
-<!--<router-outlet></router-outlet>-->
-<!--Page line break-->
-<div class="container-fluid" id="introPageBreak16">
-  <br>
-</div>
-
-<div id="projectShow">
-  <router-outlet></router-outlet>
-</div>
-<div id="contactShow">
-  <router-outlet></router-outlet>
-</div>
+<router-outlet></router-outlet>
 </body>
 </html>
 
