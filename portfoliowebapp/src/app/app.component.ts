@@ -12,7 +12,6 @@ export class AppComponent {
   interests = 'INTERESTS';
   capabilities = 'SKILLS';
   home = 'HOME';
-  introduction ='Junior programmer with a passion for programming and designing.';
 
   // Fields
   router: Router;

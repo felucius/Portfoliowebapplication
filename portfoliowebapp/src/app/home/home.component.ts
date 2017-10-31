@@ -6,6 +6,8 @@ import {Component} from "@angular/core";
 })
 
 export class HomeComponent{
+
+  introduction ='Junior programmer with a passion for programming and designing.';
   constructor(){
 
   }
