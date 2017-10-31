@@ -3,6 +3,10 @@
 <head>
 </head>
 
+<div>
+  <br>
+</div>
+
 <body>
 <div [@projectAnimation]="stateName" (load)="toggle()" id="projectInformation">
   <ul *ngFor="let project of projects; let i of index" (click)="getHyperLinks(i.id)">

@@ -3,6 +3,10 @@
   <head>
   </head>
 
+  <div>
+    <br>
+  </div>
+
   <body>
   <div [@contactAnimation]="stateName" (load)="toggle()" id="contactInformation">
     <ul *ngFor="let contactme of contacts; let i of index" (click)="setHyperLinks(i.id)">
