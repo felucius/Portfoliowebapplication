@@ -16,7 +16,7 @@ import {Project} from './project-object.component';
         query('ul', style({
           transform: 'translateX(-100%)'
         })),
-        query('ul', stagger('1200ms', [
+        query('ul', stagger('400ms', [
           animate('900ms', style({transform: 'translateX(0)'}))
         ]))
       ])
@@ -38,10 +38,11 @@ export class ProjectComponent {
 
   public createProjects(){
     this.projects = [
-      {id: 1, name: 'Android - Calories checker', image: 'assets/images/iteration2/calorieschecker.png', hyperLink: 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl'},
-      {id: 2, name: 'Android - Piksel tap', image: 'assets/images/iteration2/pikseltap.png', hyperLink: null},
-      {id: 3, name: 'Android - Tasklist manager', image: 'assets/images/iteration2/tasklistmanager.png', hyperLink: null},
-      {id: 4, name: 'Android - Bitcoin currency', image: 'assets/images/iteration2/bitcoincurrency.png', hyperLink: null}
+      {id: 1, name: 'Android - Calories checker', image: 'assets/images/iteration2/logo/calorieschecker.png', hyperLink: 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl'},
+      {id: 2, name: 'Android - Piksel tap', image: 'assets/images/iteration2/logo/pikseltap.png', hyperLink: null},
+      {id: 3, name: 'Android - Tasklist manager', image: 'assets/images/iteration2/logo/tasklistmanager.png', hyperLink: null},
+      {id: 4, name: 'Android - Bitcoin currency', image: 'assets/images/iteration2/logo/bitcoincurrency.png', hyperLink: null},
+      {id: 5, name: 'Android/Windows - Computer locker', image: 'assets/images/iteration2/logo/computerocker.png', hyperLink: null}
     ];
   }
 

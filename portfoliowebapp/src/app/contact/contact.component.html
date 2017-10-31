@@ -1,29 +1,20 @@
 <html>
-<title>Contact</title>
-<head>
-</head>
+  <title>CONTACT</title>
+  <head>
+  </head>
 
-<body>
-<div class="row justify-content-center">
-  <h1>{{title}}</h1>
-</div>
+  <body>
+  <div [@contactAnimation]="stateName" (load)="toggle()" id="contactInformation">
+    <ul *ngFor="let contactme of contacts; let i of index" (click)="setHyperLinks(i.id)">
+      <div class="rounded-circle">
+        <img class="col-md-2 padtop" class="rounded-circle" src="{{contactme.image}}">
+      </div>
+      {{contactme.name}}
+    </ul>
+  </div>
 
-<!--Outlet of navigation links-->
-<!--
-<div class="row justify-content-center" id="gotorouter">
-</div>-->
-
-<div [@contactAnimation]="stateName" (load)="toggle()" id="contactInformation">
-  <ul *ngFor="let contactme of contacts; let i of index" (click)="setHyperLinks(i.id)">
-    <div class="rounded-circle">
-      <img class="col-md-2 padtop" class="rounded-circle" src="{{contactme.image}}">
-    </div>
-    {{contactme.name}}
-  </ul>
-</div>
-
-<div class="container-fluid" class="bg-danger">
-  <br>
-</div>
-</body>
+  <div class="container-fluid" class="bg-danger">
+    <br>
+  </div>
+  </body>
 </html>

@@ -13,7 +13,7 @@ import {Router} from "@angular/router";
         query('ul', style({
           transform: 'translateX(-100%)'
         })),
-        query('ul', stagger('1200ms', [
+        query('ul', stagger('400ms', [
           animate('900ms', style({transform: 'translateX(0)'}))
         ]))
       ])
@@ -35,10 +35,10 @@ export class ContactComponent {
 
   public createContacts(){
     this.contacts = [
-      {id: 1, name: 'E-MAIL', image: 'assets/images/iteration2/emaillogo.png', hyperLink: null},
-      {id: 2, name: 'FACEBOOK', image: 'assets/images/iteration2/facebooklogo.png', hyperLink: 'https://www.facebook.com/maxime.delange'},
-      {id: 3, name: 'LINKEDIN', image: 'assets/images/iteration2/linkedinlogo.png', hyperLink: 'https://www.linkedin.com/in/maxime-de-lange-867a4165/'},
-      {id: 4, name: 'GITHUB', image: 'assets/images/iteration2/gitlogo.jpg', hyperLink: 'https://github.com/felucius'}
+      {id: 1, name: 'E-MAIL', image: 'assets/images/iteration2/logo/emaillogo.png', hyperLink: null},
+      {id: 2, name: 'FACEBOOK', image: 'assets/images/iteration2/logo/facebooklogo.png', hyperLink: 'https://www.facebook.com/maxime.delange'},
+      {id: 3, name: 'LINKEDIN', image: 'assets/images/iteration2/logo/linkedinlogo.png', hyperLink: 'https://www.linkedin.com/in/maxime-de-lange-867a4165/'},
+      {id: 4, name: 'GITHUB', image: 'assets/images/iteration2/logo/gitlogo.jpg', hyperLink: 'https://github.com/felucius'}
     ];
   }
 

@@ -1,39 +1,24 @@
 <html>
-<title>Ambitions</title>
-<head>
-  <!--Import angular api-->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  <!--Import viewport for disabling zooming in phones-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <!--Import stylsheet from Bootstrap framework-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-</head>
+  <title>SKILLS</title>
+  <head>
+  </head>
 
-<body>
-<div class="row justify-content-center">
-  <h1>{{title}}</h1>
-</div>
+  <body>
+  <div [@skillAnimation]="stateName" (load)="toggle()" id="skillInformation">
+    <ul *ngFor="let skill of skills">
 
-<!--Outlet of navigation links-->
-<!--
-<div class="row justify-content-center" id="gotorouter">
-</div>-->
+      <div class="rounded-circle">
+        <img class="col-md-2 padtop" class="rounded-circle" src="{{skill.image}}">
+      </div>
 
-<div [@skillAnimation]="stateName" (load)="toggle()" id="skillInformation">
-  <ul *ngFor="let skill of skills">
-
-    <div class="rounded-circle">
-      <img class="col-md-2 padtop" class="rounded-circle" src="{{skill.image}}">
-    </div>
-
-    {{skill.name}}
-    {{skill.framework}}
-  </ul>
-</div>
+      {{skill.name}}
+      {{skill.framework}}
+    </ul>
+  </div>
 
 
-<div class="container-fluid" class="bg-danger">
-  <br>
-</div>
-</body>
+  <div class="container-fluid" class="bg-danger">
+    <br>
+  </div>
+  </body>
 </html>
