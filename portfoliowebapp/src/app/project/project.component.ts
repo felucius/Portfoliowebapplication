@@ -42,7 +42,7 @@ export class ProjectComponent {
       {id: 2, name: 'Android - Piksel tap', image: 'assets/images/iteration2/logo/pikseltap.png', hyperLink: null},
       {id: 3, name: 'Android - Tasklist manager', image: 'assets/images/iteration2/logo/tasklistmanager.png', hyperLink: null},
       {id: 4, name: 'Android - Bitcoin currency', image: 'assets/images/iteration2/logo/bitcoincurrency.png', hyperLink: null},
-      {id: 5, name: 'Android/Windows - Computer locker', image: 'assets/images/iteration2/logo/computerocker.png', hyperLink: null}
+      {id: 5, name: 'Android - Computer locker', image: 'assets/images/iteration2/logo/computerocker.png', hyperLink: null}
     ];
   }
 

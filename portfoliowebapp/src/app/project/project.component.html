@@ -8,14 +8,23 @@
 </div>
 
 <body>
-<div [@projectAnimation]="stateName" (load)="toggle()" id="projectInformation">
-  <ul *ngFor="let project of projects; let i of index" (click)="getHyperLinks(i.id)">
-    <div class="rounded-circle">
-      <img class="col-md-2" class="rounded-circle" src="{{project.image}}">
+  <div *ngFor="let project of projects; let i of index" (click)="getHyperLinks(i.id)" class="card card-1">
+    <header class="divColor">
+      <br>
+      <div class="row justify-content-center">
+        <img class="rounded-circle"  src="{{project.image}}">
+      </div>
+    </header>
+    <div class="row justify-content-center">
+      <p>{{project.name}}</p>
     </div>
-    {{project.name}}
-  </ul>
-</div>
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <br>
+        <p class="cardInformation"></p>
+      </div>
+    </div>
+  </div>
 
 <div class="container-fluid" id="pageBreak">
   <br>
