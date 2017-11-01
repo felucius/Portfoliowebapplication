@@ -56,7 +56,7 @@ body > * {
 }
 
 h1 {
-  font-size: 5.9vw;
+  font-size: 5.0vw;
 }
 h2 {
   font-size: 2.5vw;
@@ -84,4 +84,9 @@ li{
 .link-3:hover {
   color: saddlebrown;
   padding: 0px 10px;
+}
+
+#navigationButton{
+  margin-left: auto;
+  margin-right: auto;
 }

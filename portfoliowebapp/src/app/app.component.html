@@ -25,18 +25,20 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div id="navigationMargin" class="col-md-8">
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
+          <div>
+            <h1>MAXIME DE LANGE</h1>
+          </div>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <a class="link-3" routerLink=""><h2>{{home}}</h2></a>
-            <a class="link-3" routerLink="interests"><h2>{{interests}}</h2></a>
-            <a class="link-3" routerLink="skills"><h2>{{capabilities}}</h2></a>
-            <a class="link-3" (click)="toggleDiv('projectShow')" routerLink="projects"><h2>{{projects}}</h2></a>
-            <a class="link-3" (click)="toggleDiv('contactShow')" routerLink="contact"><h2>{{contact}}</h2></a>
-          </ul>
+          <a class="link-3" routerLink=""><h2 class="navText">{{home}}</h2></a>
+          <a class="link-3" routerLink="interests"><h2 class="navText">{{interests}}</h2></a>
+          <a class="link-3" routerLink="skills"><h2 class="navText">{{capabilities}}</h2></a>
+          <a class="link-3" (click)="toggleDiv('projectShow')" routerLink="projects"><h2 class="navText">{{projects}}</h2></a>
+          <a class="link-3" (click)="toggleDiv('contactShow')" routerLink="contact"><h2 class="navText">{{contact}}</h2></a>
         </div>
       </div>
     </div>
