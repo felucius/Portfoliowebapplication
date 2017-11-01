@@ -8,14 +8,25 @@
   </div>
 
   <body>
-  <div [@skillAnimation]="stateName" (load)="toggle()" id="contactInformation">
-    <ul *ngFor="let interest of interests">
-      <div class="rounded-circle">
-        <img class="col-md-2 padtop" class="rounded-circle" src="{{interest.image}}">
+    <!--<ul *ngFor="let interest of interests">-->
+      <div *ngFor="let interest of interests" class="card card-1">
+        <header class="divColor">
+          <br>
+          <div class="row justify-content-center">
+            <img class="rounded-circle"  src="{{interest.image}}">
+          </div>
+        </header>
+        <div class="row justify-content-center">
+          {{interest.name}}
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <br>
+            <p class="cardInformation">{{interest.description}}</p>
+          </div>
+        </div>
       </div>
-      {{interest.name}}
-    </ul>
-  </div>
+    <!--</ul>-->
 
   <div class="container-fluid" id="PageBreak">
     <br>
