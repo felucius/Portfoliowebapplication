@@ -8,14 +8,23 @@
   </div>
 
   <body>
-  <div [@contactAnimation]="stateName" (load)="toggle()" id="contactInformation">
-    <ul *ngFor="let contactme of contacts; let i of index" (click)="setHyperLinks(i.id)">
-      <div class="rounded-circle">
-        <img class="col-md-2 padtop" class="rounded-circle" src="{{contactme.image}}">
+    <div *ngFor="let contactme of contacts; let i of index" (click)="setHyperLinks(i.id)" class="card card-1">
+      <header class="divColor">
+        <br>
+        <div class="row justify-content-center">
+          <img class="rounded-circle"  src="{{contactme.image}}">
+        </div>
+      </header>
+      <div class="row justify-content-center">
+        <p>{{contactme.name}}</p>
       </div>
-      {{contactme.name}}
-    </ul>
-  </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <br>
+          <p class="cardInformation">{{contactme.description}}</p>
+        </div>
+      </div>
+    </div>
 
   <div class="container-fluid" id="pageBreak">
     <br>

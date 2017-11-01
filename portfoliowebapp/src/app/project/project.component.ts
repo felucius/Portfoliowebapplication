@@ -38,11 +38,16 @@ export class ProjectComponent {
 
   public createProjects(){
     this.projects = [
-      {id: 1, name: 'Android - Calories checker', image: 'assets/images/iteration2/logo/calorieschecker.png', hyperLink: 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl'},
-      {id: 2, name: 'Android - Piksel tap', image: 'assets/images/iteration2/logo/pikseltap.png', hyperLink: null},
-      {id: 3, name: 'Android - Tasklist manager', image: 'assets/images/iteration2/logo/tasklistmanager.png', hyperLink: null},
-      {id: 4, name: 'Android - Bitcoin currency', image: 'assets/images/iteration2/logo/bitcoincurrency.png', hyperLink: null},
-      {id: 5, name: 'Android - Computer locker', image: 'assets/images/iteration2/logo/computerocker.png', hyperLink: null}
+      {id: 1, name: 'Android - Calories checker', image: 'assets/images/iteration2/logo/calorieschecker.png', hyperLink: 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl',
+        description: 'Android application that keeps track of your daily calories.'},
+      {id: 2, name: 'Android - Piksel tap', image: 'assets/images/iteration2/logo/pikseltap.png', hyperLink: null,
+        description: 'Android click game where the main protagonist needs to defeat enemies to become stronger and better.'},
+      {id: 3, name: 'Android - Tasklist manager', image: 'assets/images/iteration2/logo/tasklistmanager.png', hyperLink: null,
+        description: 'Managing daily tasks. Tasks can be added to calendar, email or the app itself.'},
+      {id: 4, name: 'Android - Bitcoin currency', image: 'assets/images/iteration2/logo/bitcoincurrency.png', hyperLink: null,
+        description: 'Keeping track of the Bitcoin value in the valuta of Euro € and Dollars $.'},
+      {id: 5, name: 'Android - Computer locker', image: 'assets/images/iteration2/logo/computerocker.png', hyperLink: null,
+        description: 'Android app that serves as a client that can remotely lock a computer.'}
     ];
   }
 

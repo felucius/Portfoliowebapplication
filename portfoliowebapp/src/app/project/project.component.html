@@ -8,7 +8,7 @@
 </div>
 
 <body>
-  <div *ngFor="let project of projects; let i of index" (click)="getHyperLinks(i.id)" class="card card-1">
+  <div *ngFor="let project of projects; let i of index" (click)="setHyperLinks(i.id)" class="card card-1">
     <header class="divColor">
       <br>
       <div class="row justify-content-center">
@@ -21,7 +21,7 @@
     <div class="row justify-content-center">
       <div class="col-md-12">
         <br>
-        <p class="cardInformation"></p>
+        <p class="cardInformation">{{project.description}}</p>
       </div>
     </div>
   </div>

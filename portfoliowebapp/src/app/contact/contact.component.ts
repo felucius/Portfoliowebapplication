@@ -35,10 +35,14 @@ export class ContactComponent {
 
   public createContacts(){
     this.contacts = [
-      {id: 1, name: 'E-MAIL', image: 'assets/images/iteration2/logo/emaillogo.png', hyperLink: null},
-      {id: 2, name: 'FACEBOOK', image: 'assets/images/iteration2/logo/facebooklogo.png', hyperLink: 'https://www.facebook.com/maxime.delange'},
-      {id: 3, name: 'LINKEDIN', image: 'assets/images/iteration2/logo/linkedinlogo.png', hyperLink: 'https://www.linkedin.com/in/maxime-de-lange-867a4165/'},
-      {id: 4, name: 'GITHUB', image: 'assets/images/iteration2/logo/gitlogo.jpg', hyperLink: 'https://github.com/felucius'}
+      {id: 1, name: 'E-MAIL', image: 'assets/images/iteration2/logo/emaillogo.png', hyperLink: null,
+        description: 'MAXIME.DE.LANGE@OUTLOOK.COM'},
+      {id: 2, name: 'FACEBOOK', image: 'assets/images/iteration2/logo/facebooklogo.png', hyperLink: 'https://www.facebook.com/maxime.delange',
+        description: 'Click here to view my profile.'},
+      {id: 3, name: 'LINKEDIN', image: 'assets/images/iteration2/logo/linkedinlogo.png', hyperLink: 'https://www.linkedin.com/in/maxime-de-lange-867a4165/',
+        description: 'Click here to view my profile'},
+      {id: 4, name: 'GITHUB', image: 'assets/images/iteration2/logo/gitlogo.jpg', hyperLink: 'https://github.com/felucius',
+        description: 'Click here to view my profile'}
     ];
   }
 
@@ -52,9 +56,6 @@ export class ContactComponent {
 
   setHyperLinks(hyperLinkID){
     switch (hyperLinkID){
-      case 1:
-        this.contacts[0].name = 'MAXIME.DE.LANGE@OUTLOOK.COM';
-        break;
       case 2:
         location.href = 'https://www.facebook.com/maxime.delange';
         break;
