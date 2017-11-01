@@ -8,17 +8,24 @@
   </div>
 
   <body>
-  <div [@skillAnimation]="stateName" (load)="toggle()" id="skillInformation">
-    <ul *ngFor="let skill of skills">
-
-      <div class="rounded-circle">
-        <img class="col-md-2 padtop" class="rounded-circle" src="{{skill.image}}">
+    <div *ngFor="let skill of skills" class="card card-1">
+      <header class="divColor">
+        <br>
+        <div class="row justify-content-center">
+          <img class="rounded-circle" src="{{skill.image}}">
+        </div>
+      </header>
+      <div class="row justify-content-center">
+        {{skill.name}}
+        {{skill.framework}}
       </div>
-
-      {{skill.name}}
-      {{skill.framework}}
-    </ul>
-  </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <br>
+          <p class="cardInformation"></p>
+        </div>
+      </div>
+    </div>
 
   <div class="container-fluid" id="introPageBreak2">
     <br>

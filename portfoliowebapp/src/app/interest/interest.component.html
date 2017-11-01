@@ -8,25 +8,23 @@
   </div>
 
   <body>
-    <!--<ul *ngFor="let interest of interests">-->
-      <div *ngFor="let interest of interests" class="card card-1">
-        <header class="divColor">
-          <br>
-          <div class="row justify-content-center">
-            <img class="rounded-circle"  src="{{interest.image}}">
-          </div>
-        </header>
+    <div *ngFor="let interest of interests" class="card card-1">
+      <header class="divColor">
+        <br>
         <div class="row justify-content-center">
-          {{interest.name}}
+          <img class="rounded-circle"  src="{{interest.image}}">
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-12">
-            <br>
-            <p class="cardInformation">{{interest.description}}</p>
-          </div>
+      </header>
+      <div class="row justify-content-center">
+        {{interest.name}}
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <br>
+          <p class="cardInformation">{{interest.description}}</p>
         </div>
       </div>
-    <!--</ul>-->
+    </div>
 
   <div class="container-fluid" id="PageBreak">
     <br>
