@@ -11,28 +11,6 @@
   background-color: #333333;
 }
 
-/*
-.container:hover .overlay{
-  opacity: 1;
-}
-
-#image1:hover #overlay1{
-  opacity: 1;
-}
-
-#image2:hover #overlay2{
-  opacity: 1;
-}
-
-#image3:hover #overlay3{
-  opacity: 1;
-}
-
-#image4:hover #overlay4{
-  opacity: 1;
-}
-*/
-
 .text {
   color: white;
   font-size: 100%;
@@ -67,18 +45,6 @@ p {
 
 li{
   margin-left: 5%;
-}
-
-#introPageBreak6{
-  background-color: saddlebrown;
-}
-
-#introPageBreak9{
-  background-color: saddlebrown;
-}
-
-#introPageBreak12{
-  background-color: saddlebrown;
 }
 
 #containerIntro{
