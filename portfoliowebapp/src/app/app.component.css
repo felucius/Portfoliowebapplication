@@ -75,14 +75,13 @@ li{
 
 .link-3 {
   transition: 0.4s;
-  color: #EEA200;
-  font-size: 20px;
+  color: #D8315B;
   text-decoration: none;
   padding: 0 10px;
   margin: 0 10px;
 }
 .link-3:hover {
-  color: saddlebrown;
+  color: #3E92CC;
   padding: 0px 10px;
 }
 
@@ -90,3 +89,9 @@ li{
   margin-left: auto;
   margin-right: auto;
 }
+
+.divider{
+  background-color: #0A2463;
+}
+
+

@@ -80,3 +80,55 @@ li{
 #introPageBreak12{
   background-color: saddlebrown;
 }
+
+#containerIntro{
+  width: 100%;
+  height: 100%;
+}
+
+.introText {
+  position: absolute;
+  width: 100%;
+  background-color: #D8315B;
+  color: #FFFFFF;
+  font-weight: bold;
+  opacity: 1;
+  margin-top: 25%;
+}
+
+.introName{
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  background-color: #3E92CC;
+  color: #FFFFFF;
+  font-weight: bold;
+  opacity: 1;
+  margin-top: 10%;
+}
+
+.introJoke{
+  position: absolute;
+  left: 12.5%;
+  width: 75%;
+  background-color: #0A2463;
+  color: #FFFFFF;
+  font-weight: bold;
+  opacity: 0.2;
+  margin-top: 5%;
+}
+
+.introJoke2{
+  position: absolute;
+  left: 12.5%;
+  width: 75%;
+  background-color: #0A2463;
+  color: #FFFFFF;
+  font-weight: bold;
+  opacity: 0.5;
+  margin-top: 20%;
+}
+
+.divider{
+  background-color: #0A2463;
+}
