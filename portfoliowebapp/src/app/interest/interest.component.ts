@@ -5,24 +5,10 @@ import {Interest} from "./interest-object.component";
 @Component({
   templateUrl: './interest.component.html',
   styleUrls: ['./interest.component.css'],
-
-  animations: [
-    trigger('skillAnimation', [
-      transition('* => *', [
-        query('ul', style({
-          transform: 'translateX(-100%)'
-        })),
-        query('ul', stagger('400ms', [
-          animate('900ms', style({transform: 'translateX(0)'}))
-        ]))
-      ])
-    ])
-  ]
 })
 
 export class InterestComponent {
   title = 'Interests';
-  show = false;
   interests: Interest[];
 
   constructor(){
@@ -42,13 +28,5 @@ export class InterestComponent {
       {id: 5, name: 'INTERACTIVE DESIGNING', image: 'assets/images/iteration2/logo/interactivedesignlogo.png',
         description: 'Love to design <3'}
     ]
-  }
-
-  get stateName(){
-    return this.show ? 'show' : 'hide';
-  }
-
-  toggle(){
-    this.show = !this.show;
   }
 }
