@@ -114,7 +114,7 @@ li{
   background-color: #0A2463;
   color: #FFFFFF;
   font-weight: bold;
-  opacity: 0.2;
+  opacity: 0.1;
   margin-top: 5%;
 }
 
@@ -125,10 +125,19 @@ li{
   background-color: #0A2463;
   color: #FFFFFF;
   font-weight: bold;
-  opacity: 0.5;
+  opacity: 0.3;
   margin-top: 20%;
 }
 
 .divider{
   background-color: #0A2463;
+}
+
+/* Showing this div only on small devices such as mobiles*/
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  #mobileDivOnly { display: block; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 600px) and (max-width: 2000px) {
+  #mobileDivOnly { display: none; }   /* hide it elsewhere */
 }
