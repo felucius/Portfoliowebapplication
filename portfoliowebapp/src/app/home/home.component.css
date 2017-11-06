@@ -100,7 +100,7 @@ li{
 }
 
 /* Showing this div only on small devices such as mobiles*/
-@media screen and (min-width: 0px) and (max-width: 400px) {
+@media screen and (min-width: 0px) and (max-width: 200px) {
   #mobileDivOnly { display: block; }  /* show it on small screens */
 }
 
