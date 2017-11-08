@@ -9,21 +9,13 @@
 
   <body>
     <div *ngFor="let skill of skills" class="card card-1">
-      <header class="divColor">
-        <br>
-        <div class="row justify-content-center">
-          <img class="rounded-circle" src="{{skill.image}}">
-        </div>
-      </header>
       <div class="row justify-content-center">
-        {{skill.name}}
-        {{skill.framework}}
+        <img src="{{skill.image}}">
       </div>
+
       <div class="row justify-content-center">
-        <div class="col-md-12">
-          <br>
-          <p class="cardInformation"></p>
-        </div>
+        <!--{{skill.name}}
+        {{skill.framework}}-->
       </div>
     </div>
 

@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83caf024-8d43-4c7a-9e0c-37d07b6eaedd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/project/bitcoinicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/project/calorieschecker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/project/computerlocker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/project/pikseltap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/project/tasklistemail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/androidlogo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/androidlogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/angularlogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/bootstraplogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/csharplogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/csslogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/gitlogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/htmllogo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/javalogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/javascriptlogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/mysqllogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/sqllogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/swiftlogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/typescriptlogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/umllogo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfoliowebapp/src/app/home/home.component.css" afterPath="$PROJECT_DIR$/portfoliowebapp/src/app/home/home.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.css" afterPath="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.html" afterPath="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.ts" afterPath="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +42,7 @@
       <file leaf-file-name="home.component.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/home/home.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="362">
               <caret line="102" column="54" lean-forward="false" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
               <folding />
             </state>
@@ -58,14 +80,12 @@
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/js/MainController.js" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/js/app.js" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill-object.component.ts" />
-        <option value="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.ts" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/navigationbar.component.ts" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/index.html" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/interest/interest-object.component.ts" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/interest/interest.component.html" />
-        <option value="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.html" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/project/project-object.component.ts" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/contact/contact-object.contact.ts" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/contact/contact.component.html" />
@@ -74,7 +94,6 @@
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/project/project.component.ts" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/interest/interest.component.css" />
-        <option value="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.css" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/project/project.component.css" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/contact/contact.component.css" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/app.component.html" />
@@ -83,6 +102,9 @@
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/home/home.component.html" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/interest/interest.component.ts" />
         <option value="$PROJECT_DIR$/portfoliowebapp/src/app/home/home.component.css" />
+        <option value="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.css" />
+        <option value="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.html" />
+        <option value="$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.ts" />
       </list>
     </option>
   </component>
@@ -116,6 +138,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -148,13 +171,46 @@
               <item name="portfoliowebapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="skill" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortfolioWebAppAngular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortfolioWebAppAngular" type="462c0819:PsiDirectoryNode" />
+              <item name="portfoliowebapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortfolioWebAppAngular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortfolioWebAppAngular" type="462c0819:PsiDirectoryNode" />
+              <item name="portfoliowebapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortfolioWebAppAngular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortfolioWebAppAngular" type="462c0819:PsiDirectoryNode" />
+              <item name="portfoliowebapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="iteration3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortfolioWebAppAngular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortfolioWebAppAngular" type="462c0819:PsiDirectoryNode" />
+              <item name="portfoliowebapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="iteration3" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,17 +221,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\app\js" />
-      <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\app\Interest" />
-      <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\app" />
-      <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\assets\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\assets\images\iteration3\project" />
       <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\assets\images\iteration3" />
       <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\assets\images\iteration2\logo" />
       <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\assets\images\iteration2" />
       <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\assets\videos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\assets\images\iteration3\skill" />
+      <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\app\js" />
+      <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\app\Interest" />
+      <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\app" />
       <recent name="C:\MaximeProject\PortfolioWebAppAngular\portfoliowebapp\src\assets\images" />
     </key>
   </component>
@@ -231,12 +288,13 @@
       <workItem from="1509459446128" duration="1473000" />
       <workItem from="1509464543702" duration="5711000" />
       <workItem from="1509529061739" duration="11216000" />
-      <workItem from="1509961718290" duration="12061000" />
+      <workItem from="1509961718290" duration="12663000" />
+      <workItem from="1510155630636" duration="8306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190385000" />
+    <option name="totallyTimeSpent" value="199293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -302,21 +360,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/assets/images/maxime1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration2/cssimage.PNG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration2/cssimage2.PNG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/app.component.ambitions.html" />
     <entry file="file://$PROJECT_DIR$/portfoliowebapp/dist/main.bundle.js" />
     <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/indexpage.js" />
@@ -418,9 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#55#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -446,7 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -462,7 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-611">
           <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -470,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -478,7 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -486,7 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -494,7 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -502,7 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -510,7 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -518,7 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="46" column="27" lean-forward="false" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -526,7 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,7 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -550,7 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,7 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-152">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -574,31 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="46" column="27" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="35" column="59" lean-forward="false" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -610,9 +612,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/csslogo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/angularlogo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/assets/images/iteration3/skill/htmllogo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="48" column="67" lean-forward="false" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/skill/skill.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/portfoliowebapp/src/app/home/home.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="362">
           <caret line="102" column="54" lean-forward="false" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
           <folding />
         </state>
