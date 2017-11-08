@@ -9,21 +9,17 @@
 
 <body>
   <div *ngFor="let project of projects; let i of index" (click)="setHyperLinks(i.id)" class="card card-1">
-    <header class="divColor">
-      <br>
       <div class="row justify-content-center">
-        <img class="rounded-circle"  src="{{project.image}}">
+        <img src="{{project.image}}">
+        <!--
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <p>{{project.name}}</p>
+            <br>
+            <p class="cardInformation">{{project.description}}</p>
+          </div>
+        </div>-->
       </div>
-    </header>
-    <div class="row justify-content-center">
-      <p>{{project.name}}</p>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-12">
-        <br>
-        <p class="cardInformation">{{project.description}}</p>
-      </div>
-    </div>
   </div>
 
 <div class="container-fluid" id="pageBreak">
