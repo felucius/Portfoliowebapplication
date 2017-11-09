@@ -3,23 +3,22 @@
   <head>
   </head>
 
-  <div>
-    <br>
-  </div>
-
   <body>
+  <br>
+
+  <div class="row justify-content-center">
     <div *ngFor="let interest of interests" class="card card-1">
       <div class="row justify-content-center">
         <img src="{{interest.image}}">
         <div class="col-md-12">
-          <div class="cardInformation">
             <p class="text-center">{{interest.name}}</p>
-            <br>
-            <p class="text-center">{{interest.description}}</p>
-          </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <br>
+  <br>
 
   <div class="container-fluid" id="PageBreak">
     <br>
