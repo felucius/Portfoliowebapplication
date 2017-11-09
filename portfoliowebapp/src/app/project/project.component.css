@@ -37,12 +37,12 @@
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
   position: relative;
-  margin-top: -60%;
+  margin-top: -300px;
 }
 
 .card-1:hover .cardInformation{
   visibility: visible;
-  opacity: 0.8;
+  opacity: 1;
   height: 300px;
   width: 300px;
   left: -1px;
@@ -53,9 +53,4 @@
 .cardHover:hover{
   height: 300px;
   width: 300px;
-}
-
-.divColor{
-  background-color: #3E92CC;
-  height: 40%;
 }

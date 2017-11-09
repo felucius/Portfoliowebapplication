@@ -9,19 +9,14 @@
 
   <body>
     <div *ngFor="let interest of interests" class="card card-1">
-      <header class="divColor">
-        <br>
-        <div class="row justify-content-center">
-          <img class="rounded-circle"  src="{{interest.image}}">
-        </div>
-      </header>
       <div class="row justify-content-center">
-        {{interest.name}}
-      </div>
-      <div class="row justify-content-center">
+        <img src="{{interest.image}}">
         <div class="col-md-12">
-          <br>
-          <p class="cardInformation">{{interest.description}}</p>
+          <div class="cardInformation">
+            <p class="text-center">{{interest.name}}</p>
+            <br>
+            <p class="text-center">{{interest.description}}</p>
+          </div>
         </div>
       </div>
     </div>

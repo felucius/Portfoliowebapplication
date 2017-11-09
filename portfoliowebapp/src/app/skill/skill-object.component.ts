@@ -3,13 +3,13 @@ export class Skill{
   id: number;
   name: String;
   image: String;
-  framework: String;
+  description: String;
 
   // Constructor
-  constructor(id: number, name: String, image: String, framework: String){
+  constructor(id: number, name: String, image: String, description: String){
     this.id = id;
     this.name = name;
     this.image = image;
-    this.framework = framework;
+    this.description = description;
   }
 }

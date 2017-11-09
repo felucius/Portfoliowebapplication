@@ -10,15 +10,14 @@
 <body>
   <div *ngFor="let project of projects; let i of index" (click)="setHyperLinks(i.id)" class="card card-1">
     <div class="row justify-content-center">
-
-    <img src="{{project.image}}">
-      <div class="col-md-12">
-        <div class="cardInformation">
-        <p>{{project.description}}</p>
-        <br>
-        <p>{{project.name}}</p>
+      <img src="{{project.image}}">
+        <div class="col-md-12">
+          <div class="cardInformation">
+            <p class="text-center">{{project.description}}</p>
+            <br>
+            <p class="text-center">{{project.name}}</p>
+          </div>
         </div>
-      </div>
     </div>
   </div>
 

@@ -3,21 +3,20 @@
   <head>
   </head>
 
-  <div>
-    <br>
-  </div>
-
   <body>
+
+  <div class="row justify-content-center">
     <div *ngFor="let skill of skills" class="card card-1">
       <div class="row justify-content-center">
         <img src="{{skill.image}}">
-      </div>
-
-      <div class="row justify-content-center">
-        <!--{{skill.name}}
-        {{skill.framework}}-->
+        <div class="col-md-12">
+          <p class="text-center">{{skill.name}}</p>
+        </div>
       </div>
     </div>
+  </div>
+
+  <br>
 
   <div class="container-fluid" id="introPageBreak2">
     <br>
