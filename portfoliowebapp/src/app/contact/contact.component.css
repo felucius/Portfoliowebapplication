@@ -14,7 +14,6 @@
   margin: 1rem;
   position: relative;
   width: 175px;
-  font-size: 20px;
   font-weight: bold;
 }
 
@@ -50,6 +49,22 @@
 .card-1:hover .hoverCard{
   visibility: visible;
   font-size: 10px;
+}
+
+.contactHover{
+  background-color: #0A2463;
+  height: 175px;
+  position: relative;
+  width: 175px;
+  left: -1px;
+  font-weight: bold;
+  margin-top: -215px;
+  opacity: 0;
+  color: gainsboro;
+}
+
+.contactHover:hover{
+  opacity: 1;
 }
 
 body{

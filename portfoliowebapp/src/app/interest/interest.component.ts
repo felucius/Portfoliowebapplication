@@ -25,7 +25,7 @@ export class InterestComponent {
         description: 'Blockchain is a new concept for me which I started learning a couple of months ago. Momentarily busy with a project.'},
       {id: 4, name: 'CRYPTOCURRENCY', image: 'assets/images/iteration3/interest/bitcoinicon.png',
         description: 'Early adopter and invester in cryptocurrency. Trading and holding is my game.'},
-      {id: 5, name: 'MOBILE DEVELOPMENT', image: 'assets/images/iteration3/interest/mobiledevelopment.png',
+      {id: 5, name: 'MOB. DEVELOPMENT', image: 'assets/images/iteration3/interest/mobiledevelopment.png',
         description: 'Started with mobile development since 2015. Highly interested in Android, but IOS is also a lot of fun.'}
     ]
   }

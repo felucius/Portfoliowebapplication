@@ -39,6 +39,22 @@
   position: relative;
 }
 
+.skillHover{
+  background-color: #0A2463;
+  height: 175px;
+  position: relative;
+  width: 175px;
+  left: -1px;
+  font-weight: bold;
+  margin-top: -215px;
+  opacity: 0;
+  color: gainsboro;
+}
+
+.skillHover:hover{
+  opacity: 1;
+}
+
 body{
   background-color: gainsboro;
 }
