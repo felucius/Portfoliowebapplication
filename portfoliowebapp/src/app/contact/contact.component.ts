@@ -35,14 +35,20 @@ export class ContactComponent {
 
   public createContacts(){
     this.contacts = [
-      {id: 1, name: 'E-MAIL', image: 'assets/images/iteration3/contact/maillogo.png', hyperLink: null,
-        description: 'MAXIME.DE.LANGE@OUTLOOK.COM'},
-      {id: 2, name: 'FACEBOOK', image: 'assets/images/iteration3/contact/facebooklogo.jpg', hyperLink: 'https://www.facebook.com/maxime.delange',
-        description: 'Click here to view my profile.'},
-      {id: 3, name: 'LINKEDIN', image: 'assets/images/iteration3/contact/linkedinlogo.png', hyperLink: 'https://www.linkedin.com/in/maxime-de-lange-867a4165/',
-        description: 'Click here to view my profile'},
-      {id: 4, name: 'GITHUB', image: 'assets/images/iteration3/contact/githublogo.png', hyperLink: 'https://github.com/felucius',
-        description: 'Click here to view my profile'}
+      {id: 1, name: 'Email', image: 'fas fa-envelope', hyperLink: null,
+        description: 'maxime.de.lange@outlook.com'},
+      {id: 2, name: 'Facebook', image: 'fab fa-facebook-square', hyperLink: 'https://www.facebook.com/maxime.delange',
+        description: 'Facbook profile and interests.'},
+      {id: 3, name: 'Linkedin', image: 'fab fa-linkedin', hyperLink: 'https://www.linkedin.com/in/maxime-de-lange-867a4165/',
+        description: 'Linkedin profile and interests'},
+      {id: 4, name: 'Github', image: 'fab fa-github-square', hyperLink: 'https://github.com/felucius',
+        description: 'Git projects and source code'},
+      {id: 5, name: 'Reddit', image: 'fab fa-reddit-square', hyperLink: 'https://www.reddit.com/user/felucius',
+        description: 'Social community and stories'},
+      {id: 6, name: 'Stack overflow', image: 'fab fa-stack-overflow', hyperLink: 'https://stackoverflow.com/users/4415306/maxime-de-lange',
+        description: 'Contribution to the community'},
+      {id: 7, name: 'Twitter', image: 'fab fa-twitter-square', hyperLink: 'https://twitter.com/Maxime29463441',
+        description: 'Social media and tweets'}
     ];
   }
 
@@ -57,13 +63,22 @@ export class ContactComponent {
   setHyperLinks(hyperLinkID){
     switch (hyperLinkID){
       case 2:
-        location.href = 'https://www.facebook.com/maxime.delange';
+        window.open('https://www.facebook.com/maxime.delange', '_blank');
         break;
       case 3 :
-        location.href = 'https://www.linkedin.com/in/maxime-de-lange-867a4165/';
+        window.open('https://www.linkedin.com/in/maxime-de-lange-867a4165/', '_blank');
         break;
       case 4:
-        location.href = 'https://github.com/felucius';
+        window.open('https://github.com/felucius', '_blank');
+        break;
+      case 5:
+        window.open('https://www.reddit.com/user/felucius', '_blank');
+        break;
+      case 6:
+        window.open('https://stackoverflow.com/users/4415306/maxime-de-lange', '_blank');
+        break;
+      case 7:
+        window.open('https://twitter.com/Maxime29463441', '_blank');
         break;
     }
   }

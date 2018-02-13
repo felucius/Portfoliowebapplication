@@ -6,16 +6,13 @@
 <body>
 <br>
 
-<div class="row justify-content-center">
-  <div *ngFor="let project of projects; let i of index" (click)="setHyperLinks(i.id)" class="card card-1">
-    <div class="row justify-content-center">
-      <img src="{{project.image}}">
-        <div class="col-md-12">
-          <p class="text-center">{{project.name}}</p>
-          <div class="projectHover">
-            <p class="text-center">{{project.description}}</p>
-          </div>
-        </div>
+<div class="row justify-content-center text-center">
+  <div *ngFor="let project of projects; let i of index" (click)="setHyperLinks(i.id)" class="card" style="width: 12rem;">
+    <br>
+    <i class="{{project.image}}"></i>
+    <div class="card-body">
+      <p class="card-text"><b>{{project.name}}</b></p>
+      <p class="card-text">{{project.description}}</p>
     </div>
   </div>
 </div>

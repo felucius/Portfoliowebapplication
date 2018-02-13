@@ -38,16 +38,18 @@ export class ProjectComponent {
 
   public createProjects(){
     this.projects = [
-      {id: 1, name: 'Calories checker', image: 'assets/images/iteration3/project/calorieschecker.png', hyperLink: 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl',
+      {id: 1, name: 'Calories checker', image: 'fas fa-calendar-check', hyperLink: 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl',
         description: 'Android application that keeps track of your daily calories.'},
-      {id: 2, name: 'Piksel tap', image: 'assets/images/iteration3/project/pikseltap.png', hyperLink: null,
+      {id: 2, name: 'Piksel tap', image: 'fas fa-gamepad', hyperLink: null,
         description: 'Android click game where the main protagonist needs to defeat enemies to become stronger and better.'},
-      {id: 3, name: 'Tasklist manager', image: 'assets/images/iteration3/project/tasklistmanager.png', hyperLink: null,
+      {id: 3, name: 'Tasklist manager', image: 'fas fa-tasks', hyperLink: null,
         description: 'Managing daily tasks. Tasks can be added to calendar, email or the app itself.'},
-      {id: 4, name: 'Bitcoin currency', image: 'assets/images/iteration3/project/bitcoincurrency.png', hyperLink: null,
+      {id: 4, name: 'Bitcoin currency', image: 'fab fa-bitcoin', hyperLink: null,
         description: 'Keeping track of the Bitcoin value in the valuta of Euro € and Dollars $.'},
-      {id: 5, name: 'Computer locker', image: 'assets/images/iteration3/project/computerlocker.png', hyperLink: null,
-        description: 'Android app that serves as a client that can remotely lock a computer.'}
+      {id: 5, name: 'Computer locker', image: 'fas fa-unlock-alt', hyperLink: null,
+        description: 'Android app that serves as a client that can remotely lock a computer.'},
+      {id: 6, name: 'Reddcoin lottery', image: 'far fa-money-bill-alt', hyperLink: 'https://reddcoinforfun.com/',
+        description: 'Reddcoin lottery for the Reddcoin community'}
     ];
   }
 
@@ -62,7 +64,7 @@ export class ProjectComponent {
   setHyperLinks(hyperLinkID){
     switch (hyperLinkID){
       case 1:
-        location.href = 'https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl';
+        window.open('https://play.google.com/store/apps/details?id=maximedelange.calorieschecker&hl=nl', '_blank');
         break;
         /*
       case 2:
@@ -75,6 +77,9 @@ export class ProjectComponent {
         location.href = '';
         break;
         */
+      case 6:
+        window.open('https://reddcoinforfun.com/', '_blank');
+        break;
     }
   }
 }
